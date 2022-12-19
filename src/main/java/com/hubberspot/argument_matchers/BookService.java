@@ -1,9 +1,12 @@
-package com.hubberspot.exception_handling;
+package com.hubberspot.argument_matchers;
 
-import com.hubberspot.Test_Double_Stub.BookRequest;
-import com.hubberspot.exception_handling.*;
-
+import com.hubberspot.exception_handling.DatabaseReadException;
+import com.hubberspot.exception_handling.DatabaseWriteException;
+import com.hubberspot.argument_matchers.Book;
+import com.hubberspot.argument_matchers.BookRepository;
+import com.hubberspot.argument_matchers.BookRequest;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.List;
 
 public class BookService
@@ -36,6 +39,12 @@ public class BookService
         return totalPrice;
 
     }
+
+    public Book getBookByTitleAndPublishedDate(String Title, LocalDate localDate)
+    {
+         return bookRepository.findByBookTitleAndPublishedDate(Title, localDate);
+    }
+
 
     public void addBook(Book book) throws DatabaseWriteException {
         try {

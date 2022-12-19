@@ -1,0 +1,53 @@
+package com.hubberspot.argumentCaptor;
+
+import java.time.LocalDate;
+import com.hubberspot.argumentCaptor.*;
+
+public class BookRequest
+{
+    private String title;
+    private int price;
+    private LocalDate publishedDate;
+
+    public BookRequest(String title, int price, LocalDate publishedDate) {
+
+        this.title = title;
+        this.price = price;
+        this.publishedDate = publishedDate;
+    }
+
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public LocalDate getPublishedDate() {
+        return publishedDate;
+    }
+
+    public void setPublishedDate(LocalDate publishedDate) {
+        this.publishedDate = publishedDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                '\'' +
+                ", title='" + title + '\'' +
+                ", price=" + price +
+                ", publishedDate=" + publishedDate +
+                '}';
+    }
+}

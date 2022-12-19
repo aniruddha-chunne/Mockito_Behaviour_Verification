@@ -1,11 +1,12 @@
-package com.hubberspot.behaviour.verification;
+package com.hubberspot.spies;
 
 //Stub provide a predefined answer to the method or dependencies when called
 
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Book extends com.hubberspot.exception_handling.Book {
+public class Book
+{
     private String bookId;
     private String title;
     private int price;

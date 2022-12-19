@@ -1,6 +1,4 @@
-package com.hubberspot.behaviour.verification;
-
-import java.time.LocalDate;
+package com.hubberspot.bdd_Stubbing.behaviour_verification;
 
 public interface BookRepository
 {
@@ -12,5 +10,4 @@ public interface BookRepository
 //    Book findByBookIds(String bookId);
 Book findByBookIds(String bookId);
 
-    com.hubberspot.argument_matchers.Book findByBookTitleAndPublishedDate(String title, LocalDate localDate);
 }

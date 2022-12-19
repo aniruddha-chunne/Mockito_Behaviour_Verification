@@ -5,9 +5,11 @@ import java.util.List;
 
 public interface BookRepository
 {
-    void save (Book book);
+
 
         List<Book> findAllBooks() throws SQLException;
+
+        void save(Book book) throws SQLException;
 
 
 }

@@ -1,4 +1,4 @@
-package com.hubberspot.behaviour.verification;
+package com.hubberspot.bdd_Stubbing.behaviour_verification;
 
 //Stub provide a predefined answer to the method or dependencies when called
 
